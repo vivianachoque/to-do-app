@@ -6,7 +6,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav></nav>
+        <nav className="navbar navbar-dark bg-dark">
+          <a href="" className="text-white">
+            Tareas
+          </a>
+        </nav>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
