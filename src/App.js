@@ -3,7 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import { todos } from './todos.json'
 
-console.log (todos);
+constructor () {
+    super();
+    this.state = {
+        title: 'Aplicacion de tareas',
+        ntareas: 10
+
+    }
+}
 
 class App extends Component {
   render() {
