@@ -1,24 +1,22 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { todos } from './todos.json'
+import { todos } from "./todos.json";
 
 class App extends Component {
-constructor () {
+  constructor() {
     super();
     this.state = {
-        title: 'Aplicacion de tareas',
-        ntareas: 10
-
-    }
-}
+      todos
+    };
+  }
 
   render() {
     return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
           <a href="" className="text-white">
-            {this.state.title} - {this.state.ntareas}
+            Tareas
           </a>
         </nav>
 
