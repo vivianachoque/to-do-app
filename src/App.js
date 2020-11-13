@@ -12,6 +12,12 @@ class App extends Component {
   }
 
   render() {
+     const todos = this.state.todos.map((todo, i) => {
+          return(
+              <div className="card">
+                  {todo.title}</div>
+          )
+      })
     return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
@@ -19,7 +25,7 @@ class App extends Component {
             Tareas
           </a>
         </nav>
-
+        { todos }
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
