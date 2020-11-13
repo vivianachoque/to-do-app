@@ -15,11 +15,10 @@ class App extends Component {
     const todos = this.state.todos.map((todo, i) => {
       return (
         <div className="card">
-          {" "}
           <div className="card-header">
             <h3>{todo.title}</h3>
           </div>
-          {todo.title}
+          <div className="card-body">{todo.description}</div>
         </div>
       );
     });
