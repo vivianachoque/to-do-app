@@ -7,17 +7,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      todos
+      todos,
     };
   }
 
   render() {
-     const todos = this.state.todos.map((todo, i) => {
-          return(
-              <div className="card">
-                  {todo.title}</div>
-          )
-      })
+    const todos = this.state.todos.map((todo, i) => {
+      return (
+        <div className="card">
+          {" "}
+          <div className="card-header">
+            <h3>{todo.title}</h3>
+          </div>
+          {todo.title}
+        </div>
+      );
+    });
     return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
@@ -25,7 +30,7 @@ class App extends Component {
             Tareas
           </a>
         </nav>
-        { todos }
+        {todos}
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
