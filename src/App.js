@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { todos } from './todos.json'
 
+class App extends Component {
 constructor () {
     super();
     this.state = {
@@ -12,13 +13,12 @@ constructor () {
     }
 }
 
-class App extends Component {
   render() {
     return (
       <div className="App">
         <nav className="navbar navbar-dark bg-dark">
           <a href="" className="text-white">
-            Tareas
+            {this.state.title} - {this.state.ntareas}
           </a>
         </nav>
 
