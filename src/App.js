@@ -22,8 +22,10 @@ class App extends Component {
                 {todo.priority}
               </span>
             </div>
-            <div className="card-body"><p>{todo.description}</p><p>{todo.responsible}</p></div>
-
+            <div className="card-body">
+              <p>{todo.description}</p>
+              <p>{todo.responsible}</p>
+            </div>
           </div>
         </div>
       );
