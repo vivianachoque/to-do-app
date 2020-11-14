@@ -31,7 +31,9 @@ class App extends Component {
             Tareas
           </a>
         </nav>
-        {todos}
+        <div className="container">
+          <div className="row mt-4">{todos}</div>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
