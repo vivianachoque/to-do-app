@@ -14,11 +14,13 @@ class App extends Component {
   render() {
     const todos = this.state.todos.map((todo, i) => {
       return (
-        <div className="card">
-          <div className="card-header">
-            <h3>{todo.title}</h3>
+        <div className="col-md-4">
+          <div className="card">
+            <div className="card-header">
+              <h3>{todo.title}</h3>
+            </div>
+            <div className="card-body">{todo.description}</div>
           </div>
-          <div className="card-body">{todo.description}</div>
         </div>
       );
     });
