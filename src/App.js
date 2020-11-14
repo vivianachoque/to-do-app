@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+
 import { todos } from "./todos.json";
+
+import  TodoForm  from "./components/TodoForm";
 
 class App extends Component {
   constructor() {
@@ -35,13 +38,23 @@ class App extends Component {
         <nav className="navbar navbar-dark bg-dark">
           <a href="" className="text-white">
             Tareas
-            <span className="badge badge-pill badge-light ml-2"> {this.state.todos.length}</span>
+            <span className="badge badge-pill badge-light ml-2">
+              {this.state.todos.length}
+            </span>
           </a>
         </nav>
+
         <div className="container">
-          <div className="row mt-4">{todos}</div>
+          <div className="row mt-4">
+            <div className="col-md-3">
+              <img src={logo} className="App-logo" alt="logo" />
+            </div>
+            <TodoForm />
+          </div>
+          <div className="col-md-9">
+            <div className="row">{todos}</div>
+          </div>
         </div>
-        <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
   }
