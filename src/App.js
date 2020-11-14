@@ -18,8 +18,12 @@ class App extends Component {
           <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.title}</h3>
+              <span className="badge badge-pill badge-danger ml-2">
+                {todo.priority}
+              </span>
             </div>
-            <div className="card-body">{todo.description}</div>
+            <div className="card-body"><p>{todo.description}</p><p>{todo.responsible}</p></div>
+
           </div>
         </div>
       );
