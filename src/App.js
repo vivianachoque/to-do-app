@@ -4,7 +4,7 @@ import "./App.css";
 
 import { todos } from "./todos.json";
 
-import  TodoForm  from "./components/TodoForm";
+import TodoForm from "./components/TodoForm";
 
 class App extends Component {
   constructor() {
