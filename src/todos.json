@@ -17,6 +17,12 @@
     "responsible": "Sonia",
     "description":"lorem impsum 3",
     "priority":"high"
+    },
+    {
+    "title": "Task 4",
+    "responsible": "Fabian",
+    "description":"lorem impsum 4",
+    "priority":"high"
     }
 ]
 }

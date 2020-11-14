@@ -15,7 +15,7 @@ class App extends Component {
     const todos = this.state.todos.map((todo, i) => {
       return (
         <div className="col-md-4">
-          <div className="card">
+          <div className="card mt-4">
             <div className="card-header">
               <h3>{todo.title}</h3>
             </div>
